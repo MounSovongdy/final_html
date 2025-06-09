@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="sidebar">
+    <h2>Company</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">User Profile</a>
+    <a href="#">More</a>
+    <a href="#">Notifications</a>
+    <a href="#">Support</a>
+  </div>
+  <div class="main">
+    <h1 class="title">Dashboard</h1>
+    <div class="card">
+      <div class="cards">
+        <div class="card-icon space"><img src="icons/data_white.svg" alt="space"></div>
+        <div class="card-content">
+          <h4>Used Space</h4>
+          <h2>49/50 GB</h2>
+        </div>
+        <hr>
+        <div class="card-footer">
+          <img src="icons/alert.png" alt="">
+          <span>Get more space...</span>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-icon revenue"><img src="icons/shop_white.svg" alt=""></div>
+        <div class="card-content">
+          <h4>Revenue</h4>
+          <h2>$ 34,245</h2>
+        </div>
+        <hr>
+        <div class="card-footer">
+          <img src="icons/calendar.png" alt="">
+          <span>last 24 Hours</span>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-icon fixed"><img src="icons/tag_white.svg" alt=""></div>
+        <div class="card-content">
+          <h4>Fixed Issues</h4>
+          <h2>75</h2>
+        </div>
+        <hr>
+        <div class="card-footer">
+          <img src="icons/down.png" alt="">
+          <span>Trcuked from Github</span>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-icon follower"><img src="icons/paperplane_white.svg" alt=""></div>
+        <div class="card-content">
+          <h4>Follower</h4>
+          <h2>+245</h2>
+        </div>
+        <hr>
+        <div class="card-footer">
+          <img src="icons/time.png" alt="">
+          <span>Just Updated</span>
+        </div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stats-card">
+        <div class="chart-contianter">
+          <div class="chart-box green">
+            <img src="icons/graphics.svg">
+          </div>
+        </div>
+        <div class="card-content-start">
+          <h4>Daily Sales</h4>
+          <h2>55% increase in today's sales</h2>
+        </div>
+        <hr>
+        <div class="card-footer">
+          <img src="icons/time.png" alt="">
+          <span>updated 4 mins ago</span>
+        </div>
+      </div>
+      <div class="stats-card">
+        <div class="chart-contianter">
+          <div class="chart-box yellow">
+            <img src="icons/graphics.svg">
+          </div>
+        </div>
+        <div class="card-content-start">
+          <h4>Email Subcribtions</h4>
+          <h2>Last Campaign Performance</h2>
+        </div>
+        <hr>
+        <div class="card-footer">
+          <img src="icons/time.png" alt="">
+          <span>campaign sent 2 days ago</span>
+        </div>
+      </div>
+      <div class="stats-card">
+        <div class="chart-contianter">
+          <div class="chart-box purple">
+            <img src="icons/graphics.svg">
+          </div>
+        </div>
+        <div class="card-content-start">
+          <h4>Completed Tasks</h4>
+          <h2>Last Campaign Performance</h2>
+        </div>
+        <hr>
+        <div class="card-footer">
+          <img src="icons/time.png" alt="">
+          <span>campaign event 2 days ago</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tasks">
+      <div class="task-card">
+        <div class="task-body">
+          <div class="task-header yellow">
+            <div class="row-4">
+                <div class="col">
+                  <p class="tit">Tasks:</p>
+                </div>
+                <div class="col">
+                  <img src="icons/bug.svg"style="width:12px;vertical-align:middle;">
+                  <p style="display:inline;">bug</p>
+                </div>
+                <div class="col">
+                  <img src="icons/bug.svg"style="width:12px;vertical-align:middle;">
+                  <p style="display:inline;">bug</p>
+                </div>
+                <div class="col">
+                  <img src="icons/bug.svg"style="width:12px;vertical-align:middle;">
+                  <p style="display:inline;">bug</p>
+                </div>
+            </div>
+          </div>
+          <div class="task-content">
+          </div>
+        </div>
+      </div>
+      <div class="task-card">
+        <div class="task-body">
+          <div class="task-header blue">
+            
+          </div>
+          <div class="task-content">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="white-space"></div>
+    <hr>
+    <footer>
+      <div> 2019 - made with love</div>
+    </footer>
+  </div>
+
+  <script>
+    function markDone(button) {
+      button.parentElement.style.textDecoration = 'line-through';
+    }
+  </script>
+</body>
+
+</html>
