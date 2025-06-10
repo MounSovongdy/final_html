@@ -130,7 +130,7 @@ body {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
     }
 
-    .chart-contianter, .task-body{
+    .chart-contianter{
       position: relative;
       width: 100%;
       box-sizing: border-box;
@@ -160,7 +160,7 @@ body {
     .chart-box.yellow, .task-header.yellow{
       background-color: #f7c50b;
     } 
-    .chart-box.purple, .task-header.blue{
+    .chart-box.purple, .employee-header.blue{
       background-color: #091ac2;
     }
 
@@ -183,33 +183,149 @@ body {
       margin-bottom: 20px;
       margin-top: 40px;
     }
-    .task-card {
+    .task-card{
       background: #fff;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      position: relative;
     }
 
-    .task-header {
-      width: 100%;
+    .task-body{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding: 20px;
+      box-sizing: border-box;
+      top: -20px;
+    }
+
+    .task-header {    
       display: flex;
       position: relative;
       top: -20px;
       padding: 10px;
-    }
-
-    .row{
-      display: flex;
-      justify-content: space-around;
+      font-weight: bold;
+      color: white;
       align-items: center;
-      text-align: start;
+      gap: 10px;
     }
 
-    .tit {
-      font-size: 14px;
-      color: #ffffff;
+    .task-header button {
+      background: transparent;
+      border: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      font-weight: normal;
     }
-  
+
+    .task-header button.active {
+      background-color: #d6941e;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+
+    .task-header img {
+      width: 14px;
+      height: 14px;
+    }
+
+    .task-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .task-list li {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      border-top: 1px solid #eee;
+    }
+
+    .task-list input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .task-list span {
+      flex: 1;
+    }
+
+    .task-list button.edit,
+    .task-list button.delete {
+      width: 20px;
+      height: 20px;
+      border: none;
+      background-size: cover;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .task-list button.edit {
+      background-image: url('icons/edit.png');
+    }
+
+    .task-list button.delete {
+      background-image: url('icons/delete.png');
+    }
+
+    .employee-card {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      position: relative;
+      top: -20px;
+    }
+
+    .employee-body {
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
+      top: -20px;
+    }
+
+    .employee-header {
+      position: relative;
+      top: -20px;
+      padding: 10px;
+      font-weight: bold;
+      color: white;
+      align-items: center;
+    }
+
+    .employee-header h5 {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .employee-header p {
+      margin: 5px 0 0;
+      font-size: 10 px;
+    }
+
+    .employee-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0;
+    }
+
+    .employee-table th,
+    .employee-table td {
+      text-align: left;
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .employee-table th {
+      color: #29a19c;
+    }
+
+    .employee-table td {
+      color: #444;
+    }
+
     .white-space {
       margin-top: 80px;
     }
