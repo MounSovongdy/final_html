@@ -279,11 +279,11 @@ body {
 }
 
 .task-list button.edit {
-  background-image: url('icons/edit.png');
+  background-image: url('../icons/edit.png');
 }
 
 .task-list button.delete {
-  background-image: url('icons/delete.png');
+  background-image: url('../icons/remove.png');
 }
 
 .employee-card {
