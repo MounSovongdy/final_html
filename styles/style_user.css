@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.sidebar .active a {
+  background: #c2185b;
+  color: #fff;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-section {
+    flex: 3;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    background: #c2185b;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-header small {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+form .form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+form input, form textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+form button {
+    background: #c2185b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profile-card {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-card h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #999;
+}
+
+.profile-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+footer nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #666;
+}
